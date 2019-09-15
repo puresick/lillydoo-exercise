@@ -1,0 +1,8 @@
+*.css
+*.scss
+dist
+*.html
+*.htm
+*.png
+*.ttf
+*.svg

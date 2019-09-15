@@ -28,6 +28,7 @@
 		text-transform: uppercase;
 		height: 45px;
 		width: 100%;
+		cursor: pointer;
 
 		&:hover {
 			background: $color--accent-1;

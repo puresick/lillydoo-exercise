@@ -1,5 +1,8 @@
 <template>
 	<section>
+		<HeroHeadline>
+			Hero
+		</HeroHeadline>
 		<AppHeadline>
 			Headline
 		</AppHeadline>
@@ -16,13 +19,15 @@
 	import AppButton from "./AppButton"
 	import AppHeadline from "./AppHeadline"
 	import AppSubHeadline from "./AppSubHeadline"
+	import HeroHeadline from "./HeroHeadline"
 
 	export default {
 		name: "App",
 		components: {
 			AppButton,
 			AppHeadline,
-			AppSubHeadline
+			AppSubHeadline,
+			HeroHeadline
 		}
 	}
 </script>

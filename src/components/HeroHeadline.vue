@@ -16,5 +16,6 @@
 	h1 {
 		font-family: $font;
 		font-size: $font__size--5;
+		text-align: center;
 	}
 </style>

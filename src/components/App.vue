@@ -1,33 +1,41 @@
 <template>
-	<section>
-		<HeroHeadline>
-			Hero
-		</HeroHeadline>
-		<AppHeadline>
-			Headline
-		</AppHeadline>
-		<AppSubHeadline>
-			SubHeadline
-		</AppSubHeadline>
-		<AppButton
-			label="Label"
+	<main>
+		<HeroSection
+			headline="Entdecke unsere Hautfreundlichkeit"
 		/>
-	</section>
+	</main>
 </template>
 
 <script>
-	import AppButton from "./AppButton"
 	import AppHeadline from "./AppHeadline"
 	import AppSubHeadline from "./AppSubHeadline"
-	import HeroHeadline from "./HeroHeadline"
+	import HeroSection from "./HeroSection"
 
 	export default {
 		name: "App",
 		components: {
-			AppButton,
 			AppHeadline,
 			AppSubHeadline,
-			HeroHeadline
+			HeroSection
 		}
 	}
 </script>
+
+<style lang="scss">
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+</style>

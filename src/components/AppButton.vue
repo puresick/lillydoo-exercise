@@ -27,7 +27,7 @@
 		line-height: 2.8;
 		text-transform: uppercase;
 		height: 45px;
-		width: 100%;
+		width: 90%;
 		cursor: pointer;
 
 		&:hover {

@@ -3,20 +3,19 @@
 		<HeroSection
 			headline="Entdecke unsere Hautfreundlichkeit"
 		/>
+		<ProductPicker />
 	</main>
 </template>
 
 <script>
-	import AppHeadline from "./AppHeadline"
-	import AppSubHeadline from "./AppSubHeadline"
 	import HeroSection from "./HeroSection"
+	import ProductPicker from "./ProductPicker"
 
 	export default {
 		name: "App",
 		components: {
-			AppHeadline,
-			AppSubHeadline,
-			HeroSection
+			HeroSection,
+			ProductPicker
 		}
 	}
 </script>

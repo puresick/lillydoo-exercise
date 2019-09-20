@@ -15,5 +15,10 @@
 		min-height: 64vh;
 		display: flex;
 		padding: 0 4rem;
+
+		& > * {
+			flex-shrink: 1;
+			flex-grow: 1;
+		}
 	}
 </style>

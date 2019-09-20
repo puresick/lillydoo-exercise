@@ -1,5 +1,7 @@
 <template>
-	<button>
+	<button
+		:class="{ fluid }"
+	>
 		{{ label }}
 	</button>
 </template>
@@ -8,6 +10,10 @@
 	export default {
 		name: "AppButton",
 		props: {
+			fluid: {
+				default: false,
+				type: Boolean
+			},
 			label: {
 				default: "ButtonLabel",
 				type: String
@@ -20,8 +26,8 @@
 	@import "../stylesheets/config";
 
 	button {
-		color: $color--shade-2;
-		background: $color--accent-0;
+		color: $color--snow;
+		background: $color--lillydoo;
 		border: none;
 		font-size: $font__size--2;
 		text-transform: uppercase;
@@ -30,8 +36,12 @@
 		max-width: 20rem;
 		cursor: pointer;
 
+		&.fluid {
+			max-width: 100%;
+		}
+
 		&:hover {
-			background: $color--accent-1;
+			background: $color--oceanfoam;
 		}
 	}
 </style>

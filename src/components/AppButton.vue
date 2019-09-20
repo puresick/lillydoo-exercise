@@ -24,10 +24,10 @@
 		background: $color--accent-0;
 		border: none;
 		font-size: $font__size--2;
-		line-height: 2.8;
 		text-transform: uppercase;
-		height: 45px;
-		width: 90%;
+		height: 3rem;
+		width: 100%;
+		max-width: 20rem;
 		cursor: pointer;
 
 		&:hover {

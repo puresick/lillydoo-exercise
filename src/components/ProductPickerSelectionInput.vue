@@ -33,17 +33,29 @@
 
 <style lang="scss" scoped>
 	@import "../stylesheets/config";
+	@import "../stylesheets/mixins";
 
 	div {
 		display: flex;
-		justify-content: space-between;
+		flex-wrap: wrap;
 
 		& > * {
-			margin-right: 1rem;
+			margin-bottom: 1rem;
 		}
 
-		& > *:last-child {
-			margin-right: 0;
+		@include respond-from("large") {
+			justify-content: space-between;
+			flex-wrap: nowrap;
+		}
+
+		@include respond-from("base") {
+			& > * {
+				margin-right: 1rem;
+			}
+
+			& > *:last-child {
+				margin-right: 0;
+			}
 		}
 	}
 
@@ -52,6 +64,9 @@
 		background: none;
 		cursor: pointer;
 		width: 100%;
+		max-width: 100%;
+		@include respond-from("base") { max-width: 6rem; }
+		@include respond-from("large") { max-width: 100%; }
 		height: 4rem;
 
 		&:hover,

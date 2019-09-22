@@ -30,9 +30,11 @@
 
 <style lang="scss" scoped>
 	@import "../stylesheets/config";
+	@import "../stylesheets/mixins";
 
 	section {
-		min-height: 64vh;
+		min-height: 80vh;
+		@include respond-from("large") { min-height: 45vh; }
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -49,7 +51,12 @@
 
 	div {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
+		width: 100%;
+
+		@include respond-from("large") {
+			flex-direction: row;
+		}
 
 		& > * {
 			flex-shrink: 1;

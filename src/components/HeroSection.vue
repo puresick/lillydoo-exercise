@@ -37,21 +37,19 @@
 	@import "../stylesheets/mixins";
 
 	section {
-		@include respond-from("base") {
-			background: url("../../assets/images/header-trialbox-mobile.jpg");
-			background-size: cover;
-			background-repeat: no-repeat;
-		};
+		background: url("../../assets/images/header-trialbox-mobile.jpg");
+		background-size: center;
+		background-repeat: no-repeat;
 
 		@include respond-from("medium") {
 			background: url("../../assets/images/header-trialbox-tablet.jpg");
-			background-size: cover;
+			background-size: center;
 			background-repeat: no-repeat;
 		};
 
-		@include respond-from("extralarge") {
+		@include respond-from("large") {
 			background: url("../../assets/images/header-trialbox-desktop.jpg");
-			background-size: cover;
+			background-size: center;
 			background-repeat: no-repeat;
 		};
 

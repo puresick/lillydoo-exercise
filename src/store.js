@@ -4,6 +4,7 @@ import Vuex from "vuex"
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
+	strict: true,
 	state: {
 		productPickerItems: [
 			{
@@ -27,7 +28,30 @@ const store = new Vuex.Store({
 		productDescriptionList: [
 			"Automatischer Übergang ins jederzeit kündbare Windel-Abo für 49,50€ pro Lieferung.",
 			"Preise inkl. MwSt., ggf. zzgl. Versandkosten"
-		]
+		],
+		howToContent: {
+			headline: "Wie es funktioniert",
+			fragments: [
+				{
+					description: "Wir schenken dir die Produkte, du übernimmst nur das Porto.",
+					icon: "",
+					link: "",
+					title: "Dein Testpaket"
+				},
+				{
+					description: "Erste Monatsbox nach 14 Tagen für 49,50€ erhalten. Oder noch vor der ersten Lieferung kündigen.",
+					icon: "",
+					link: "",
+					title: "Deine Flexibilität"
+				},
+				{
+					description: "Jederzeit Designs oder Lieferintervalle anpassen oder die Windelgröße ändern.",
+					icon: "",
+					link: "",
+					title: "Deine Monatsbox"
+				}
+			]
+		}
 	},
 	mutations: {
 		setProductPickerActiveItemId(state, id) {

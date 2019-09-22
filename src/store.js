@@ -39,19 +39,20 @@ const store = new Vuex.Store({
 				{
 					description: "Wir schenken dir die Produkte, du übernimmst nur das Porto.",
 					icon: iconTrialbox,
-					link: "",
 					title: "Dein Testpaket"
 				},
 				{
 					description: "Erste Monatsbox nach 14 Tagen für 49,50€ erhalten. Oder noch vor der ersten Lieferung kündigen.",
 					icon: iconFlexibility,
-					link: "",
+					link: {
+						href: "https://www.lillydoo.com/de/windel-abo",
+						text: "Erfahre hier mehr über das LILLYDOO Windel-Abo"
+					},
 					title: "Deine Flexibilität"
 				},
 				{
 					description: "Jederzeit Designs oder Lieferintervalle anpassen oder die Windelgröße ändern.",
 					icon: iconSubscription,
-					link: "",
 					title: "Deine Monatsbox"
 				}
 			]

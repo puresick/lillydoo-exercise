@@ -9,16 +9,25 @@
 		<AppParagraph centered>
 			{{ fragment.description }}
 		</AppParagraph>
+		<AppLink
+			v-if="fragment.link"
+			:href="fragment.link.href"
+			centered
+		>
+			{{ fragment.link.text }}
+		</AppLink>
 	</article>
 </template>
 
 <script>
+	import AppLink from "./AppLink"
 	import AppParagraph from "./AppParagraph"
 	import AppSubHeadline from "./AppSubHeadline"
 
 	export default {
 		name: "HowToFragment",
 		components: {
+			AppLink,
 			AppParagraph,
 			AppSubHeadline
 		},

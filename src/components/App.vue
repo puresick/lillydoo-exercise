@@ -12,6 +12,7 @@
 		/>
 		<PackageContent
 			:content="packageContent"
+			:fragments="productPickerContent.activeItem.packageContent"
 		/>
 	</main>
 </template>
@@ -43,6 +44,10 @@
 			...mapActions([
 				"selectProduct"
 			])
+		},
+		mounted() {
+			const { items } = this.productPickerContent
+			this.selectProduct(items[0])
 		}
 	}
 </script>

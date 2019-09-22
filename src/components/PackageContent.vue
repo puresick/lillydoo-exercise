@@ -3,7 +3,7 @@
 		:headline="content.headline"
 	>
 		<PackageContentFragment
-			v-for="fragment in content.fragments"
+			v-for="fragment in fragments"
 			:fragment="fragment"
 		/>
 	</AppSection>
@@ -23,7 +23,14 @@
 			content: {
 				default: {},
 				type: Object
+			},
+			fragments: {
+				default: () => {},
+				type: Array
 			}
 		}
 	}
 </script>
+
+<style scoped>
+</style>

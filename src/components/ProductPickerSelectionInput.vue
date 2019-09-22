@@ -2,8 +2,8 @@
 	<div>
 		<button
 			v-for="item in items"
-			@click="selectProduct(item.id)"
-			:class="{ selected: item.id === activeItemId }"
+			@click="selectProduct(item)"
+			:class="{ selected: item.id === activeItem.id }"
 		>
 			<p>{{ item.label.main }}</p>
 			<p>{{ item.label.detail }}</p>
@@ -15,9 +15,9 @@
 	export default {
 		name: "ProductPickerSelectionInput",
 		props: {
-			activeItemId: {
-				default: 0,
-				type: Number
+			activeItem: {
+				default: {},
+				type: Object
 			},
 			items: {
 				default: [],

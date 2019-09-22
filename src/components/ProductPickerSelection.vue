@@ -8,7 +8,7 @@
 		</AppSubHeadline>
 		<ProductPickerSelectionInput
 			:items="items"
-			:activeItemId="activeItemId"
+			:activeItem="activeItem"
 			:selectProduct="selectProduct"
 		/>
 		<AppParagraph>
@@ -47,6 +47,10 @@
 				default: "",
 				type: String
 			},
+			description: {
+				default: "",
+				type: String
+			},
 			headline: {
 				default: "",
 				type: String
@@ -63,9 +67,9 @@
 				default: [],
 				type: Array
 			},
-			activeItemId: {
-				default: 0,
-				type: Number
+			activeItem: {
+				default: {},
+				type: Object
 			},
 			selectProduct: {
 				default: () => {},

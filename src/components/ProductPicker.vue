@@ -1,14 +1,14 @@
 <template>
 	<AppSection>
 		<ProductPickerPresentation
-			:activeItemId="content.activeItemId"
+			:activeItem="content.activeItem"
 		/>
 		<ProductPickerSelection
 			:headline="content.headline"
 			:subHeadline="content.subHeadline"
 			:description="content.description"
 			:items="content.items"
-			:activeItemId="content.activeItemId"
+			:activeItem="content.activeItem"
 			:list="content.list"
 			:cta="content.cta"
 			:selectProduct="selectProduct"

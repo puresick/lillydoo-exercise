@@ -1,14 +1,16 @@
 <template>
-	<p>{{ activeItemId }}</p>
+	<img
+		:src="activeItem.image"
+	/>
 </template>
 
 <script>
 	export default {
 		name: "ProductPickerPresentation",
 		props: {
-			activeItemId: {
-				default: 0,
-				type: Number
+			activeItem: {
+				default: {},
+				type: Object
 			}
 		}
 	}

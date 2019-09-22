@@ -38,6 +38,10 @@ const contentBabyWipesSensitive = {
 const store = new Vuex.Store({
 	strict: true,
 	state: {
+		heroContent: {
+			headline: "Entdecke unsere Hautfreundlichkeit",
+			cta: "Jetzt deine Größe wählen"
+		},
 		productPickerContent: {
 			headline: "Unser gratis Testpaket",
 			subHeadline: "Wähle deine Größe",

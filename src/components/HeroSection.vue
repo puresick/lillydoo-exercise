@@ -2,10 +2,10 @@
 	<AppSection>
 		<div>
 			<HeroHeadline>
-				{{ headline }}
+				{{ content.headline }}
 			</HeroHeadline>
 			<AppButton
-				label="Jetzt deine Größe wählen"
+				:label="content.cta"
 			/>
 		</div>
 		<div />
@@ -25,19 +25,35 @@
 			HeroHeadline
 		},
 		props: {
-			headline: {
-				default: "hero headline",
-				type: String
+			content: {
+				default: {},
+				type: Object
 			}
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
+	@import "../stylesheets/mixins";
+
 	section {
-		background: url("../../assets/images/hero.jpg");
-		background-size: cover;
-		background-repeat: no-repeat;
+		@include respond-from("base") {
+			background: url("../../assets/images/header-trialbox-mobile.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+		};
+
+		@include respond-from("medium") {
+			background: url("../../assets/images/header-trialbox-tablet.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+		};
+
+		@include respond-from("extralarge") {
+			background: url("../../assets/images/header-trialbox-desktop.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+		};
 
 		div {
 			flex-basis: 50%;

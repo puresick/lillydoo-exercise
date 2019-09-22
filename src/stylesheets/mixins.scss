@@ -1,0 +1,18 @@
+$breakpoints: (
+	("base", 480px),
+	("small", 640px),
+	("medium", 768px),
+	("large", 1024px),
+	("extralarge", 1280px)
+);
+
+@mixin respond-from($media) {
+	@each $breakpoint in $breakpoints {
+		@if $media == nth($breakpoint, 1) {
+			@media (min-width: #{nth($breakpoint, 2)})
+				{
+					@content;
+				}
+		}
+	}
+};

@@ -1,7 +1,7 @@
 <template>
 	<main>
 		<HeroSection
-			headline="Entdecke unsere Hautfreundlichkeit"
+			:content="heroContent"
 		/>
 		<ProductPicker
 			:content="productPickerContent"
@@ -35,6 +35,7 @@
 		},
 		computed: {
 			...mapState([
+				"heroContent",
 				"howToContent",
 				"packageContent",
 				"productPickerContent"

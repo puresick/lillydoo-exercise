@@ -11,6 +11,8 @@
 </script>
 
 <style lang="scss" scoped>
+	@import "../stylesheets/config";
+
 	section {
 		min-height: 64vh;
 		display: flex;
@@ -22,11 +24,11 @@
 		}
 
 		&:nth-child(even) {
-			background-color: #fff;
+			background-color: $color--snow;
 		}
 
 		&:nth-child(odd) {
-			background-color: #ccc;
+			background-color: $color--stone;
 		}
 	}
 </style>

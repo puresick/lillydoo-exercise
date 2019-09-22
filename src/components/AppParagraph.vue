@@ -1,14 +1,25 @@
 <template>
-	<p>
+	<p
+		:class="{ centered }"
+	>
 		<slot />
 	</p>
 </template>
 
 <script>
 	export default {
-		name: "AppParagraph"
+		name: "AppParagraph",
+		props: {
+			centered: {
+				default: false,
+				type: Boolean
+			}
+		}
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+	.centered {
+		text-align: center;
+	}
 </style>

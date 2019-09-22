@@ -1,6 +1,10 @@
 import Vue from "vue"
 import Vuex from "vuex"
 
+import iconFlexibility from "../assets/icons/lillydoo-your-flexibility-icon.svg"
+import iconSubscription from "../assets/icons/lillydoo-your-subscription-icon.svg"
+import iconTrialbox from "../assets/icons/lillydoo-your-trialbox-icon.svg"
+
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
@@ -34,19 +38,19 @@ const store = new Vuex.Store({
 			fragments: [
 				{
 					description: "Wir schenken dir die Produkte, du übernimmst nur das Porto.",
-					icon: "",
+					icon: iconTrialbox,
 					link: "",
 					title: "Dein Testpaket"
 				},
 				{
 					description: "Erste Monatsbox nach 14 Tagen für 49,50€ erhalten. Oder noch vor der ersten Lieferung kündigen.",
-					icon: "",
+					icon: iconFlexibility,
 					link: "",
 					title: "Deine Flexibilität"
 				},
 				{
 					description: "Jederzeit Designs oder Lieferintervalle anpassen oder die Windelgröße ändern.",
-					icon: "",
+					icon: iconSubscription,
 					link: "",
 					title: "Deine Monatsbox"
 				}

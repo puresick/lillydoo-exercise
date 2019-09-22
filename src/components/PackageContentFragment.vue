@@ -33,5 +33,13 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+	article {
+		display: flex;
+	}
+
+	div {
+		display: flex;
+		flex-direction: column;
+	}
 </style>

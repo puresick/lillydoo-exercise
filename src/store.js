@@ -87,11 +87,16 @@ const store = new Vuex.Store({
 		setProductPickerActiveItemId(state, id) {
 			// add parameter type checking
 			state.productPickerActiveItemId = id
+		},
+		setPackageContentBabyWipesImage(state, image) {
+			state.packageContent.fragments[1].image = image
 		}
 	},
 	actions: {
 		selectProduct({ commit }, id) {
 			commit("setProductPickerActiveItemId", id)
+			const image = (id > 2) ? imageBabyWipesWater : imageBabyWipesSensitive
+			commit("setPackageContentBabyWipesImage", image)
 		}
 	}
 })

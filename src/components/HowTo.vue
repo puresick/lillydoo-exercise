@@ -1,5 +1,7 @@
 <template>
-	<AppSection>
+	<AppSection
+		:headline="content.headline"
+	>
 		<HowToFragment
 			v-for="fragment in content.fragments"
 			:fragment="fragment"

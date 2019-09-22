@@ -4,6 +4,9 @@ import Vuex from "vuex"
 import iconFlexibility from "../assets/icons/lillydoo-your-flexibility-icon.svg"
 import iconSubscription from "../assets/icons/lillydoo-your-subscription-icon.svg"
 import iconTrialbox from "../assets/icons/lillydoo-your-trialbox-icon.svg"
+import imageDiaper from "../assets/images/lillydoo-little-blowballs-design-preview-tp.jpg"
+import imageBabyWipesWater from "../assets/images/water-wipes-15-small.jpg"
+import imageBabyWipesSensitive from "../assets/images/sensitive-wipes-15-small.jpg"
 
 Vue.use(Vuex)
 
@@ -54,6 +57,28 @@ const store = new Vuex.Store({
 					description: "Jederzeit Designs oder Lieferintervalle anpassen oder die Windelgröße ändern.",
 					icon: iconSubscription,
 					title: "Deine Monatsbox"
+				}
+			]
+		},
+		packageContent: {
+			headline: "Dein Testpaket enthält",
+			fragments: [
+				{
+					title: "10 Lillydoo Windels",
+					list: [
+						"0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz",
+						"Extra weich und super bequem",
+						"Mit unseren Turbo Tunneln für eine ideale Passform und schnelle Absorption"
+					],
+					image: imageDiaper
+				},
+				{
+					title: "15 Feuchttücher mit 99 % Wasser",
+					list: [
+						"0 % Parfüme & PEGs, 100 % biologisch abbaubar",
+						"Natürlich rein, extra mild, Alternative zu \"Wasser & Watte\""
+					],
+					image: imageBabyWipesWater
 				}
 			]
 		}

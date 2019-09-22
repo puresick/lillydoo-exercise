@@ -7,6 +7,9 @@
 		<HowTo
 			:content="howToContent"
 		/>
+		<PackageContent
+			:content="packageContent"
+		/>
 	</main>
 </template>
 
@@ -15,6 +18,7 @@
 
 	import HeroSection from "./HeroSection"
 	import HowTo from "./HowTo"
+	import PackageContent from "./PackageContent"
 	import ProductPicker from "./ProductPicker"
 
 	export default {
@@ -22,11 +26,13 @@
 		components: {
 			HeroSection,
 			HowTo,
+			PackageContent,
 			ProductPicker
 		},
 		computed: {
 			...mapState([
-				"howToContent"
+				"howToContent",
+				"packageContent"
 			])
 		}
 	}

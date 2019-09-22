@@ -3,7 +3,10 @@
 		<HeroSection
 			headline="Entdecke unsere Hautfreundlichkeit"
 		/>
-		<ProductPicker />
+		<ProductPicker
+			:content="productPickerContent"
+			:selectProduct="selectProduct"
+		/>
 		<HowTo
 			:content="howToContent"
 		/>
@@ -14,7 +17,7 @@
 </template>
 
 <script>
-	import { mapState } from "vuex"
+	import { mapState, mapActions } from "vuex"
 
 	import HeroSection from "./HeroSection"
 	import HowTo from "./HowTo"
@@ -32,7 +35,13 @@
 		computed: {
 			...mapState([
 				"howToContent",
-				"packageContent"
+				"packageContent",
+				"productPickerContent"
+			])
+		},
+		methods: {
+			...mapActions([
+				"selectProduct"
 			])
 		}
 	}

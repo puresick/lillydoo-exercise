@@ -1,16 +1,15 @@
 <template>
-	<p>{{ productPickerActiveItemId }}</p>
+	<p>{{ activeItemId }}</p>
 </template>
 
 <script>
-	import { mapState } from "vuex"
-
 	export default {
 		name: "ProductPickerPresentation",
-		computed: {
-			...mapState([
-				"productPickerActiveItemId"
-			])
+		props: {
+			activeItemId: {
+				default: 0,
+				type: Number
+			}
 		}
 	}
 </script>

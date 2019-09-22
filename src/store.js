@@ -13,29 +13,35 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
 	strict: true,
 	state: {
-		productPickerItems: [
-			{
-				id: 0,
-				label: {
-					main: "1",
-					detail: "(2-3 KG)"
+		productPickerContent: {
+			headline: "Unser gratis Testpaket",
+			subHeadline: "Wähle deine Größe",
+			description: "Teste jetzt unsere Windeln und Feuchttücher. Wir zahlen die Produkte, Du nur den Versand.",
+			cta: "In den Warenkorb legen",
+			activeItemId: 0,
+			list: [
+				"Automatischer Übergang ins jederzeit kündbare Windel-Abo für 49,50€ pro Lieferung.",
+				"Preise inkl. MwSt., ggf. zzgl. Versandkosten"
+			],
+			items: [
+				{
+					id: 0,
+					label: {
+						main: "1",
+						detail: "(2-3 KG)"
+					},
+					image: "../assets/images/product-1.jpg"
 				},
-				image: "../assets/images/product-1.jpg"
-			},
-			{
-				id: 1,
-				label: {
-					main: "2",
-					detail: "(3-4 KG)"
+				{
+					id: 1,
+					label: {
+						main: "2",
+						detail: "(3-4 KG)"
+					},
+					image: "../assets/images/product-2.jpg"
 				},
-				image: "../assets/images/product-2.jpg"
-			},
-		],
-		productPickerActiveItemId: 0,
-		productDescriptionList: [
-			"Automatischer Übergang ins jederzeit kündbare Windel-Abo für 49,50€ pro Lieferung.",
-			"Preise inkl. MwSt., ggf. zzgl. Versandkosten"
-		],
+			],
+		},
 		howToContent: {
 			headline: "Wie es funktioniert",
 			fragments: [
@@ -86,7 +92,7 @@ const store = new Vuex.Store({
 	mutations: {
 		setProductPickerActiveItemId(state, id) {
 			// add parameter type checking
-			state.productPickerActiveItemId = id
+			state.productPickerContent.activeItemId = id
 		},
 		setPackageContentBabyWipesImage(state, image) {
 			state.packageContent.fragments[1].image = image

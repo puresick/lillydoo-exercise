@@ -1,25 +1,25 @@
 <template>
 	<article>
 		<AppHeadline>
-			Unser gratis Testpaket
+			{{ headline }}
 		</AppHeadline>
 		<AppSubHeadline>
-			Wähle deine Größe
+			{{ subHeadline }}
 		</AppSubHeadline>
 		<ProductPickerSelectionInput
-			:items="productPickerItems"
-			:activeItemId="productPickerActiveItemId"
+			:items="items"
+			:activeItemId="activeItemId"
 			:selectProduct="selectProduct"
 		/>
 		<AppParagraph>
-			Teste jetzt unsere Windeln und Feuchttücher. Wir zahlen die Produkte, Du nur den Versand.
+			{{ description }}
 		</AppParagraph>
 		<AppList
-			:items="productDescriptionList"
+			:items="list"
 		/>
 		<AppButton
 			fluid
-			label="In den Warenkorb legen"
+			:label="cta"
 		/>
 	</article>
 </template>
@@ -32,8 +32,6 @@
 	import AppSubHeadline from "./AppSubHeadline"
 	import ProductPickerSelectionInput from "./ProductPickerSelectionInput"
 
-	import { mapState, mapActions } from "vuex"
-
 	export default {
 		name: "ProductPickerSelection",
 		components: {
@@ -44,17 +42,35 @@
 			AppSubHeadline,
 			ProductPickerSelectionInput
 		},
-		computed: {
-			...mapState([
-				"productDescriptionList",
-				"productPickerItems",
-				"productPickerActiveItemId"
-			])
-		},
-		methods: {
-			...mapActions([
-				"selectProduct"
-			])
+		props: {
+			cta: {
+				default: "",
+				type: String
+			},
+			headline: {
+				default: "",
+				type: String
+			},
+			subHeadline: {
+				default: "",
+				type: String
+			},
+			items: {
+				default: [],
+				type: Array
+			},
+			list: {
+				default: [],
+				type: Array
+			},
+			activeItemId: {
+				default: 0,
+				type: Number
+			},
+			selectProduct: {
+				default: () => {},
+				type: Function
+			}
 		}
 	}
 </script>

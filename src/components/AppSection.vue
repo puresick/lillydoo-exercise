@@ -20,5 +20,13 @@
 			flex-shrink: 1;
 			flex-grow: 1;
 		}
+
+		&:nth-child(even) {
+			background-color: #fff;
+		}
+
+		&:nth-child(odd) {
+			background-color: #ccc;
+		}
 	}
 </style>

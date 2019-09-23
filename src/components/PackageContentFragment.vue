@@ -1,8 +1,10 @@
 <template>
 	<article>
-		<img
-			:src="fragment.image"
-		/>
+		<picture>
+			<img
+				:src="fragment.image"
+				/>
+	</picture>
 		<div>
 			<AppSubHeadline>
 				{{ fragment.title }}
@@ -43,7 +45,12 @@
 		flex-direction: column;
 	}
 
+	picture {
+		display: flex;
+	}
+
 	img {
-		width: 100%;
+		object-position: center center;
+		object-fit: contain;
 	}
 </style>

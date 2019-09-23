@@ -1,7 +1,9 @@
 <template>
-	<img
-		:src="activeItem.image"
-	/>
+	<picture>
+		<img
+			:src="activeItem.image"
+			/>
+	</picture>
 </template>
 
 <script>
@@ -17,7 +19,12 @@
 </script>
 
 <style lang="scss" scoped>
+	picture {
+		display: flex;
+	}
+
 	img {
-		width: 100%;
+		object-position: center center;
+		object-fit: contain;
 	}
 </style>

@@ -54,6 +54,8 @@
 </script>
 
 <style lang="scss">
+	@import "../stylesheets/config";
+
 	html {
 		box-sizing: border-box;
 	}
@@ -69,5 +71,6 @@
 	main {
 		display: flex;
 		flex-direction: column;
+		max-width: $size--constraint;
 	}
 </style>

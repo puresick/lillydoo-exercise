@@ -24,6 +24,16 @@
 </script>
 
 <style lang="scss" scoped>
+	@import "../stylesheets/config";
+
+	a {
+		text-decoration: none;
+		color: $color--lillydoo;
+
+		&:hover {
+			color: $color--deepwater;
+		}
+	}
 	.centered {
 		text-align: center;
 	}

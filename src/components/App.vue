@@ -58,6 +58,7 @@
 
 	html {
 		box-sizing: border-box;
+		font-family: $font__text;
 	}
 
 	*, *:before, *:after {
@@ -71,6 +72,5 @@
 	main {
 		display: flex;
 		flex-direction: column;
-		max-width: $size--constraint;
 	}
 </style>

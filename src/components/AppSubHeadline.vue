@@ -14,9 +14,10 @@
 	@import "../stylesheets/config";
 
 	h3 {
-		font-family: $font;
+		font-family: $font__headline;
 		font-size: $font__size--3;
 		font-weight: normal;
 		text-transform: uppercase;
+		margin: 0 0 $gap--headline__sub 0;
 	}
 </style>

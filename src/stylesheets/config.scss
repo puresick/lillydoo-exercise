@@ -1,22 +1,46 @@
 @font-face {
-	font-family: "Archivo Regular";
-	src: url(../../assets/fonts/Archivo-Regular.woff2) format("woff2");
+	font-family: "Cantarell Regular";
+	src: url(../../assets/fonts/Cantarell-Regular-webfont.woff) format("woff2");
 }
 
-$font: "Archivo Regular", sans-serif;
+$font__text: "Cantarell Regular", sans-serif;
+$font__headline: $font__text;
 $font__size--0: 0.8rem;
 $font__size--1: 0.9375rem;
 $font__size--2: 1.0625rem;
 $font__size--3: 1.3rem;
 $font__size--4: 1.6875rem;
-$font__size--5: 2.625rem;
 
-$color--shade-0: rgb(0, 0, 0);
+$font__size--hero-headline__base: 2.225rem;
+$font__size--hero-headline__large: 2.625rem;
 
+$color--blackmirror: rgb(0, 0, 0);
 $color--snow: rgb(255, 255, 255);
 $color--stone: rgb(248, 248, 248);
 $color--concrete: rgb(124, 124, 124);
-$color--lillydoo: rgb(0, 175, 171);
 $color--oceanfoam: rgb(153, 223, 221);
+$color--lillydoo: rgb(0, 175, 171);
+$color--deepwater: rgb(0, 151, 147);
 
-$size--constraint: 1280px;
+$size--constraint: 80rem;
+$size--min-height--section__hero__base: 64vh;
+$size--min-height--section__hero__large: 42vh;
+$size--max-width--button-input: 8rem;
+$size--overlay--width: 32rem;
+
+$gap--picker-input: 0.6rem;
+$gap--headline: 2rem;
+$gap--headline__hero: 2rem;
+$gap--headline__sub: 1rem;
+$gap--flex__base: 1rem 0 1rem 0;
+$gap--flex__large: 0 2rem 0 2rem;
+$gap--picture: 0 2rem 0 0;
+$gap--constraint__section: 3rem 1rem;
+$gap--constraint__section--hero__base: 0;
+$gap--constraint__section--hero__large: 2rem;
+$gap--constraint__section--hero--overlay__base: 4rem 2rem 2rem 2rem;
+$gap--constraint__section--hero--overlay__large: 4rem;
+$gap--icon: 0 0 1rem 0;
+$gap--paragraph: 1rem;
+$gap--list: 1rem;
+$gap--list--item: 0.5rem;

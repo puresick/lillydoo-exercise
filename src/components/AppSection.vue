@@ -33,12 +33,10 @@
 	@import "../stylesheets/mixins";
 
 	section {
-		min-height: 80vh;
-		@include respond-from("large") { min-height: 45vh; }
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 0 4rem;
+		padding: $gap--constraint__section;
 
 		&:nth-child(even) {
 			background-color: $color--snow;
@@ -52,7 +50,7 @@
 	div {
 		display: flex;
 		flex-direction: column;
-		width: 100%;
+		max-width: $size--constraint;
 
 		@include respond-from("large") {
 			flex-direction: row;
@@ -61,6 +59,9 @@
 		& > * {
 			flex-shrink: 1;
 			flex-grow: 1;
+			@include respond-from("large") {
+				margin: $gap--flex__large;
+			}
 		}
 	}
 </style>

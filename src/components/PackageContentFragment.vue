@@ -4,7 +4,7 @@
 			<img
 				:src="fragment.image"
 				/>
-	</picture>
+		</picture>
 		<div>
 			<AppSubHeadline>
 				{{ fragment.title }}
@@ -36,21 +36,29 @@
 </script>
 
 <style lang="scss" scoped>
+	@import "../stylesheets/config";
+	@import "../stylesheets/mixins";
+
 	article {
 		display: flex;
+		width: 100%;
+	}
+
+	picture {
+		display: flex;
+		margin: $gap--picture;
+		width: 20%;
+	}
+
+	img {
+		object-position: top;
+		object-fit: contain;
+		width: 100%;
 	}
 
 	div {
 		display: flex;
 		flex-direction: column;
-	}
-
-	picture {
-		display: flex;
-	}
-
-	img {
-		object-position: center center;
-		object-fit: contain;
+		width: 80%;
 	}
 </style>

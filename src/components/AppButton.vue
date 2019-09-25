@@ -1,6 +1,7 @@
 <template>
 	<button
 		:class="{ fluid }"
+		@click="action"
 	>
 		{{ label }}
 	</button>
@@ -10,6 +11,10 @@
 	export default {
 		name: "AppButton",
 		props: {
+			action: {
+				default: () => {},
+				type: Function
+			},
 			fluid: {
 				default: false,
 				type: Boolean

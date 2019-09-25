@@ -18,5 +18,15 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+	@import "../stylesheets/config";
+
+	ul {
+		padding-left: 1rem;
+		margin: 0 0 $gap--list 0;
+	}
+
+	li {
+		margin: 0 0 $gap--list--item 0;
+	}
 </style>

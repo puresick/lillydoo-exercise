@@ -19,12 +19,21 @@
 </script>
 
 <style lang="scss" scoped>
+	@import "../stylesheets/config";
+	@import "../stylesheets/mixins";
+
 	picture {
 		display: flex;
+		max-width: 100%;
+		margin: $gap--flex__base;
+		@include respond-from("large") {
+			max-width: 45%;
+		}
 	}
 
 	img {
 		object-position: center center;
 		object-fit: contain;
+		width: 100%;
 	}
 </style>

@@ -1,5 +1,5 @@
 <template>
-	<AppSection>
+	<AppSection id="picker">
 		<ProductPickerPresentation
 			:activeItem="content.activeItem"
 		/>

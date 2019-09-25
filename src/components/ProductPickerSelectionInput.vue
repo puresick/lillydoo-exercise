@@ -39,20 +39,11 @@
 		display: flex;
 		flex-wrap: wrap;
 
-		& > * {
-			margin-bottom: 1rem;
-		}
-
 		@include respond-from("large") {
-			justify-content: space-between;
 			flex-wrap: nowrap;
 		}
 
 		@include respond-from("base") {
-			& > * {
-				margin-right: 1rem;
-			}
-
 			& > *:last-child {
 				margin-right: 0;
 			}
@@ -64,10 +55,10 @@
 		background: none;
 		cursor: pointer;
 		width: 100%;
-		max-width: 100%;
-		@include respond-from("base") { max-width: 6rem; }
-		@include respond-from("large") { max-width: 100%; }
-		height: 4rem;
+		max-width: $size--max-width--button-input;
+		margin-bottom: $gap--picker-input;
+		margin-right: $gap--picker-input;
+		height: 3.6rem;
 
 		&:hover,
 		&.selected {
@@ -79,5 +70,13 @@
 
 	p {
 		margin: 0;
+	}
+
+	p:first-child {
+		font-size: $font__size--3;
+	}
+
+	p:last-child {
+		font-size: $font__size--0;
 	}
 </style>

@@ -42,10 +42,21 @@
 
 <style lang="scss" scoped>
 	@import "../stylesheets/config";
+	@import "../stylesheets/mixins";
 
 	article {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		flex-basis: 100%;
+		margin: $gap--flex__base;
+
+		@include respond-from("large") {
+			margin: 0;
+		}
+	}
+
+	img {
+		margin: $gap--icon;
 	}
 </style>

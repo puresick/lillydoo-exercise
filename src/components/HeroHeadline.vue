@@ -14,8 +14,11 @@
 	@import "../stylesheets/config";
 
 	h1 {
-		font-family: $font;
-		font-size: $font__size--5;
+		font-family: $font__headline;
+		font-size: $font__size--hero-headline__base;
 		text-align: center;
+		width: 100%;
+		overflow-wrap: break-word;
+		margin: 0 0 $gap--headline__hero 0;
 	}
 </style>

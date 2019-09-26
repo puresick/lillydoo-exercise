@@ -55,6 +55,7 @@
 
 		@include respond-from("medium") {
 			flex-direction: row;
+			width: auto;
 		}
 
 		& > * {

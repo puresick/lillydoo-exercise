@@ -47,6 +47,7 @@
 
 		&:hover {
 			background: $color--oceanfoam;
+			transition: $transition--button;
 		}
 	}
 </style>

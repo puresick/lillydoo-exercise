@@ -59,6 +59,7 @@
 		margin-bottom: $gap--picker-input;
 		margin-right: $gap--picker-input;
 		height: 3.6rem;
+		transition: $transition--button;
 
 		&:hover,
 		&.selected {

@@ -25,11 +25,13 @@ $color--deepwater: rgb(0, 151, 147);
 $size--constraint: 80rem;
 $size--min-height--section__hero__base: 64vh;
 $size--min-height--section__hero__large: 42vh;
-$size--max-width--button-input: 8rem;
+$size--min-width--button-input: 5rem;
+$size--max-width--button-input: 10rem;
 $size--overlay--width: 32rem;
+$size--icon: 4rem;
 
 $gap--picker-input: 0.6rem;
-$gap--headline: 2rem;
+$gap--headline: 1rem;
 $gap--headline__hero: 2rem;
 $gap--headline__sub: 1rem;
 $gap--flex__base: 1rem 0 1rem 0;
@@ -42,7 +44,7 @@ $gap--constraint__section--hero--overlay__base: 4rem 2rem 2rem 2rem;
 $gap--constraint__section--hero--overlay__large: 4rem;
 $gap--icon: 0 0 1rem 0;
 $gap--paragraph: 1rem;
-$gap--list: 1rem;
-$gap--list--item: 0.5rem;
+$gap--list: 4rem;
+$gap--list--item: 0.2rem;
 
 $transition--button: background 0.2s ease-out;

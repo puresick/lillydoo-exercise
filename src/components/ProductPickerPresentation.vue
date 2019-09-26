@@ -26,7 +26,7 @@
 		display: flex;
 		max-width: 100%;
 		margin: $gap--flex__base;
-		@include respond-from("large") {
+		@include respond-from("medium") {
 			max-width: 45%;
 		}
 	}

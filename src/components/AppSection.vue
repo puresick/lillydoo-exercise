@@ -50,16 +50,17 @@
 	div {
 		display: flex;
 		flex-direction: column;
+		width: 100%;
 		max-width: $size--constraint;
 
-		@include respond-from("large") {
+		@include respond-from("medium") {
 			flex-direction: row;
 		}
 
 		& > * {
 			flex-shrink: 1;
 			flex-grow: 1;
-			@include respond-from("large") {
+			@include respond-from("medium") {
 				margin: $gap--flex__large;
 			}
 		}

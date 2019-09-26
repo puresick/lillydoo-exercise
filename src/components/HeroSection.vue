@@ -58,16 +58,16 @@
 			background: url("../../assets/images/header-trialbox-tablet.jpg");
 			background-size: cover;
 			background-repeat: no-repeat;
+			min-height: $size--min-height--section__hero__large;
+			flex-direction: row-reverse;
+			height: 100%;
+			padding: $gap--constraint__section--hero__large;
 		};
 
 		@include respond-from("large") {
 			background: url("../../assets/images/header-trialbox-desktop.jpg");
 			background-size: cover;
 			background-repeat: no-repeat;
-			min-height: $size--min-height--section__hero__large;
-			flex-direction: row-reverse;
-			height: 100%;
-			padding: $gap--constraint__section--hero__large;
 		};
 
 		div {
@@ -81,7 +81,7 @@
 			padding: $gap--constraint__section--hero--overlay__base;
 			background: rgba(255, 255, 255, 0.7);
 
-			@include respond-from("large") {
+			@include respond-from("medium") {
 				justify-content: center;
 				padding: $gap--constraint__section--hero--overlay__large;
 				max-width: $size--overlay--width;

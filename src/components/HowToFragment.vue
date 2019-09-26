@@ -51,12 +51,13 @@
 		flex-basis: 100%;
 		margin: $gap--flex__base;
 
-		@include respond-from("large") {
+		@include respond-from("medium") {
 			margin: 0;
 		}
 	}
 
 	img {
 		margin: $gap--icon;
+		width: $size--icon;
 	}
 </style>

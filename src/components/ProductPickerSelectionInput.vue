@@ -29,7 +29,7 @@
 			}
 		},
 		mounted() {
-			this.selectProduct(items[0])
+			this.selectProduct(this.items[0])
 		}
 	}
 </script>
@@ -59,6 +59,8 @@
 		cursor: pointer;
 		width: 100%;
 		max-width: $size--max-width--button-input;
+		min-width: $size--min-width--button-input;
+		flex-basis: $size--min-width--button-input;
 		margin-bottom: $gap--picker-input;
 		margin-right: $gap--picker-input;
 		height: 3.6rem;

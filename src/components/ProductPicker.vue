@@ -1,14 +1,14 @@
 <template>
 	<AppSection id="picker">
 		<ProductPickerPresentation
-			:activeItem="content.activeItem"
+			:activeItem="activeItem"
 		/>
 		<ProductPickerSelection
 			:headline="content.headline"
 			:subHeadline="content.subHeadline"
 			:description="content.description"
 			:items="content.items"
-			:activeItem="content.activeItem"
+			:activeItem="activeItem"
 			:list="content.list"
 			:cta="content.cta"
 			:selectProduct="selectProduct"
@@ -36,6 +36,10 @@
 			selectProduct: {
 				default: () => {},
 				type: Function
+			},
+			activeItem: {
+				default: () => ({}),
+				type: Object
 			}
 		}
 	}

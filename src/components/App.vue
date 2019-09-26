@@ -1,18 +1,19 @@
 <template>
 	<main>
 		<HeroSection
-			:content="heroContent"
+			:content="$t('hero')"
 		/>
 		<ProductPicker
-			:content="productPickerContent"
+			:content="$t('productPicker')"
 			:selectProduct="selectProduct"
+			:activeItem="productPicker.activeItem"
 		/>
 		<HowTo
-			:content="howToContent"
+			:content="$t('howTo')"
 		/>
 		<PackageContent
-			:content="packageContent"
-			:fragments="productPickerContent.activeItem.packageContent"
+			:content="$t('packageContent')"
+			:fragments="productPicker.activeItem.packageContent"
 		/>
 	</main>
 </template>
@@ -38,17 +39,13 @@
 				"heroContent",
 				"howToContent",
 				"packageContent",
-				"productPickerContent"
+				"productPicker"
 			])
 		},
 		methods: {
 			...mapActions([
 				"selectProduct"
 			])
-		},
-		mounted() {
-			const { items } = this.productPickerContent
-			this.selectProduct(items[0])
 		}
 	}
 </script>

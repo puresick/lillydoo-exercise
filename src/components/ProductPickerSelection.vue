@@ -68,7 +68,7 @@
 				type: Array
 			},
 			activeItem: {
-				default: {},
+				default: () => ({}),
 				type: Object
 			},
 			selectProduct: {

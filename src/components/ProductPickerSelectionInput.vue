@@ -27,6 +27,9 @@
 				default: () => {},
 				type: Function
 			}
+		},
+		mounted() {
+			this.selectProduct(items[0])
 		}
 	}
 </script>

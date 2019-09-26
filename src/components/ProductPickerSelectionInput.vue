@@ -42,7 +42,7 @@
 		display: flex;
 		flex-wrap: wrap;
 
-		@include respond-from("large") {
+		@include respond-from("medium") {
 			flex-wrap: nowrap;
 		}
 
@@ -59,12 +59,11 @@
 		cursor: pointer;
 		width: 100%;
 		max-width: $size--max-width--button-input;
-		min-width: $size--min-width--button-input;
-		flex-basis: $size--min-width--button-input;
 		margin-bottom: $gap--picker-input;
 		margin-right: $gap--picker-input;
-		height: 3.6rem;
+		min-height: $size--min-height--button-input;
 		transition: $transition--button;
+		padding: $padding--button__picker;
 
 		&:hover,
 		&.selected {

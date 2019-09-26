@@ -27,6 +27,7 @@ $size--min-height--section__hero__base: 64vh;
 $size--min-height--section__hero__large: 42vh;
 $size--min-width--button-input: 5rem;
 $size--max-width--button-input: 10rem;
+$size--min-height--button-input: 3.6rem;
 $size--overlay--width: 32rem;
 $size--icon: 4rem;
 
@@ -46,5 +47,7 @@ $gap--icon: 0 0 1rem 0;
 $gap--paragraph: 1rem;
 $gap--list: 4rem;
 $gap--list--item: 0.2rem;
+
+$padding--button__picker: 0.25rem;
 
 $transition--button: background 0.2s ease-out;

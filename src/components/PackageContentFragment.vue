@@ -42,6 +42,11 @@
 	article {
 		display: flex;
 		width: 100%;
+		margin: $gap--flex__base;
+
+		@include respond-from("medium") {
+			margin: $gap--flex__medium;
+		}
 	}
 
 	picture {

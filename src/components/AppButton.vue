@@ -40,6 +40,7 @@
 		width: 100%;
 		max-width: 20rem;
 		cursor: pointer;
+		margin: $gap--button;
 
 		&.fluid {
 			max-width: 100%;

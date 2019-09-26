@@ -33,9 +33,10 @@ $size--icon: 4rem;
 
 $gap--picker-input: 0.6rem;
 $gap--headline: 1rem;
-$gap--headline__hero: 2rem;
+$gap--headline__hero: 1rem;
 $gap--headline__sub: 1rem;
-$gap--flex__base: 1rem 0 1rem 0;
+$gap--flex__base: 2rem 0 1rem 0;
+$gap--flex__medium: 2rem 1rem 2rem 1rem;
 $gap--flex__large: 0 2rem 0 2rem;
 $gap--picture: 0 2rem 0 0;
 $gap--constraint__section: 3rem 1rem;
@@ -45,8 +46,10 @@ $gap--constraint__section--hero--overlay__base: 4rem 2rem 2rem 2rem;
 $gap--constraint__section--hero--overlay__large: 4rem;
 $gap--icon: 0 0 1rem 0;
 $gap--paragraph: 1rem;
-$gap--list: 4rem;
+$gap--list: 1rem;
 $gap--list--item: 0.2rem;
+$gap--button: 2rem 0 0 0;
+$gap--picker: 0 0 0 4rem;
 
 $padding--button__picker: 0.25rem;
 

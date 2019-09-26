@@ -78,3 +78,14 @@
 		}
 	}
 </script>
+
+<style lang="scss" scoped>
+	@import "../stylesheets/config";
+	@import "../stylesheets/mixins";
+
+	article {
+		@include respond-from("medium") {
+			padding: $gap--picker;
+		}
+	}
+</style>

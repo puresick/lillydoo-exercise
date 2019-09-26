@@ -52,7 +52,7 @@
 		margin: $gap--flex__base;
 
 		@include respond-from("medium") {
-			margin: 0;
+			margin: $gap--flex__medium;
 		}
 	}
 

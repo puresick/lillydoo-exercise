@@ -5,10 +5,7 @@ import de from "../content.js"
 
 Vue.use(VueI18n)
 
-const messages = {
-	de
-}
-
+const messages = { de }
 const i18n = new VueI18n({
 	locale: "de",
 	messages

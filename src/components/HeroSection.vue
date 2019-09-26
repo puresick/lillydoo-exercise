@@ -13,31 +13,31 @@
 </template>
 
 <script>
-	import AppButton from "./AppButton"
-	import AppSection from "./AppSection"
-	import HeroHeadline from "./HeroHeadline"
+import AppButton from "./AppButton"
+import AppSection from "./AppSection"
+import HeroHeadline from "./HeroHeadline"
 
-	export default {
-		name: "HeroSection",
-		components: {
-			AppButton,
-			AppSection,
-			HeroHeadline
-		},
-		props: {
-			content: {
-				default: {},
-				type: Object
-			}
-		},
-		methods: {
-			cta() {
-				document.querySelector("#picker").scrollIntoView({
-					behavior: "smooth"
-				})
-			}
+export default {
+	name: "HeroSection",
+	components: {
+		AppButton,
+		AppSection,
+		HeroHeadline
+	},
+	props: {
+		content: {
+			default: () => ({}),
+			type: Object
+		}
+	},
+	methods: {
+		cta() {
+			document.querySelector("#picker").scrollIntoView({
+				behavior: "smooth"
+			})
 		}
 	}
+}
 </script>
 
 <style lang="scss" scoped>

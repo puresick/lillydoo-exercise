@@ -7,7 +7,7 @@ const store = new Vuex.Store({
 	strict: true,
 	state: {
 		productPicker: {
-			activeItem: {},
+			activeItem: {}
 		}
 	},
 	mutations: {

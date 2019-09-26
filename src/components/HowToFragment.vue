@@ -2,7 +2,7 @@
 	<article>
 		<img
 			:src="fragment.icon"
-		/>
+		>
 		<AppSubHeadline>
 			{{ fragment.title }}
 		</AppSubHeadline>
@@ -20,24 +20,24 @@
 </template>
 
 <script>
-	import AppLink from "./AppLink"
-	import AppParagraph from "./AppParagraph"
-	import AppSubHeadline from "./AppSubHeadline"
+import AppLink from "./AppLink"
+import AppParagraph from "./AppParagraph"
+import AppSubHeadline from "./AppSubHeadline"
 
-	export default {
-		name: "HowToFragment",
-		components: {
-			AppLink,
-			AppParagraph,
-			AppSubHeadline
-		},
-		props: {
-			fragment: {
-				default: {},
-				type: Object
-			}
+export default {
+	name: "HowToFragment",
+	components: {
+		AppLink,
+		AppParagraph,
+		AppSubHeadline
+	},
+	props: {
+		fragment: {
+			default: () => ({}),
+			type: Object
 		}
 	}
+}
 </script>
 
 <style lang="scss" scoped>

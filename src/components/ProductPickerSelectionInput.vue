@@ -2,8 +2,9 @@
 	<div>
 		<button
 			v-for="item in items"
-			@click="selectProduct(item)"
+			:key="item.id"
 			:class="{ selected: item.id === activeItem.id }"
+			@click="selectProduct(item)"
 		>
 			<p>{{ item.label.main }}</p>
 			<p>{{ item.label.detail }}</p>
@@ -12,26 +13,26 @@
 </template>
 
 <script>
-	export default {
-		name: "ProductPickerSelectionInput",
-		props: {
-			activeItem: {
-				default: {},
-				type: Object
-			},
-			items: {
-				default: [],
-				type: Array
-			},
-			selectProduct: {
-				default: () => {},
-				type: Function
-			}
+export default {
+	name: "ProductPickerSelectionInput",
+	props: {
+		activeItem: {
+			default: () => ({}),
+			type: Object
 		},
-		mounted() {
-			this.selectProduct(this.items[0])
+		items: {
+			default: () => ([]),
+			type: Array
+		},
+		selectProduct: {
+			default: () => {},
+			type: Function
 		}
+	},
+	mounted() {
+		this.selectProduct(this.items[0])
 	}
+}
 </script>
 
 <style lang="scss" scoped>
@@ -78,10 +79,10 @@
 	}
 
 	p:first-child {
-		font-size: $font__size--3;
+		font-size: $font__size--headline__sub;
 	}
 
 	p:last-child {
-		font-size: $font__size--0;
+		font-size: $font__size--button--detail;
 	}
 </style>

@@ -5,9 +5,9 @@
 </template>
 
 <script>
-	export default {
-		name: "AppHeadline"
-	}
+export default {
+	name: "AppHeadline"
+}
 </script>
 
 <style lang="scss" scoped>
@@ -15,7 +15,7 @@
 
 	h2 {
 		font-family: $font__headline;
-		font-size: $font__size--4;
+		font-size: $font__size--headline;
 		margin: 0 0 $gap--headline 0;
 	}
 </style>

@@ -2,20 +2,20 @@
 	<picture>
 		<img
 			:src="activeItem.image"
-			/>
+		>
 	</picture>
 </template>
 
 <script>
-	export default {
-		name: "ProductPickerPresentation",
-		props: {
-			activeItem: {
-				default: {},
-				type: Object
-			}
+export default {
+	name: "ProductPickerPresentation",
+	props: {
+		activeItem: {
+			default: () => ({}),
+			type: Object
 		}
 	}
+}
 </script>
 
 <style lang="scss" scoped>

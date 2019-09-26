@@ -8,23 +8,23 @@
 </template>
 
 <script>
-	export default {
-		name: "AppButton",
-		props: {
-			action: {
-				default: () => {},
-				type: Function
-			},
-			fluid: {
-				default: false,
-				type: Boolean
-			},
-			label: {
-				default: "ButtonLabel",
-				type: String
-			}
+export default {
+	name: "AppButton",
+	props: {
+		action: {
+			default: () => {},
+			type: Function
+		},
+		fluid: {
+			default: false,
+			type: Boolean
+		},
+		label: {
+			default: "ButtonLabel",
+			type: String
 		}
 	}
+}
 </script>
 
 <style lang="scss" scoped>
@@ -34,13 +34,13 @@
 		color: $color--snow;
 		background: $color--lillydoo;
 		border: none;
-		font-size: $font__size--2;
+		font-size: $font__size--button--label;
 		text-transform: uppercase;
 		height: 3rem;
 		width: 100%;
 		max-width: 20rem;
-		cursor: pointer;
 		margin: $gap--button;
+		cursor: pointer;
 
 		&.fluid {
 			max-width: 100%;

@@ -5,9 +5,9 @@
 </template>
 
 <script>
-	export default {
-		name: "HeroHeadline"
-	}
+export default {
+	name: "HeroHeadline"
+}
 </script>
 
 <style lang="scss" scoped>

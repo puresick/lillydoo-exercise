@@ -1,21 +1,24 @@
 <template>
 	<ul>
-		<li v-for="item in items">
+		<li
+			v-for="item in items"
+			:key="item"
+		>
 			{{ item }}
 		</li>
 	</ul>
 </template>
 
 <script>
-	export default {
-		name: "AppList",
-		props: {
-			items: {
-				default: [],
-				type: Array
-			}
+export default {
+	name: "AppList",
+	props: {
+		items: {
+			default: () => [],
+			type: Array
 		}
 	}
+}
 </script>
 
 <style lang="scss" scoped>

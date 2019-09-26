@@ -1,32 +1,35 @@
 {
-  "name": "lillydoo-exercise",
-  "version": "1.0.0",
-  "description": "lillydoo job application coding exercise",
-  "scripts": {
-    "dev": "npx parcel src/index.html",
-    "dev:nocache": "npx parcel src/index.html --no-cache",
-    "build": "NODE_ENV=production npx parcel build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/puresick/lillydoo-exercise.git"
-  },
-  "author": "Daniel Henning aka puresick",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/puresick/lillydoo-exercise/issues"
-  },
-  "homepage": "https://github.com/puresick/lillydoo-exercise#readme",
-  "devDependencies": {
-    "@vue/component-compiler-utils": "^3.0.0",
-    "autoprefixer": "^9.6.1",
-    "eslint": "^6.4.0",
-    "parcel-bundler": "^1.12.3",
-    "sass": "^1.22.12",
-    "vue": "^2.6.10",
-    "vue-hot-reload-api": "^2.3.4",
-    "vue-i18n": "^8.14.1",
-    "vue-template-compiler": "^2.6.10",
-    "vuex": "^3.1.1"
-  }
+	"name": "lillydoo-exercise",
+	"version": "1.0.0",
+	"description": "lillydoo job application coding exercise",
+	"scripts": {
+		"dev": "npx parcel src/index.html",
+		"dev:nocache": "npx parcel src/index.html --no-cache",
+		"build": "NODE_ENV=production npx parcel build",
+		"lint": "npx eslint 'src/**'",
+		"lint:fix": "npx eslint 'src/**' --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/puresick/lillydoo-exercise.git"
+	},
+	"author": "Daniel Henning aka puresick",
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": "https://github.com/puresick/lillydoo-exercise/issues"
+	},
+	"homepage": "https://github.com/puresick/lillydoo-exercise#readme",
+	"devDependencies": {
+		"@vue/component-compiler-utils": "^3.0.0",
+		"autoprefixer": "^9.6.1",
+		"eslint": "^6.4.0",
+		"eslint-plugin-vue": "^5.2.3",
+		"parcel-bundler": "^1.12.3",
+		"sass": "^1.22.12",
+		"vue": "^2.6.10",
+		"vue-hot-reload-api": "^2.3.4",
+		"vue-i18n": "^8.14.1",
+		"vue-template-compiler": "^2.6.10",
+		"vuex": "^3.1.1"
+	}
 }

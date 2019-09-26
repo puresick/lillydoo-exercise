@@ -7,15 +7,15 @@
 </template>
 
 <script>
-	export default {
-		name: "AppParagraph",
-		props: {
-			centered: {
-				default: false,
-				type: Boolean
-			}
+export default {
+	name: "AppParagraph",
+	props: {
+		centered: {
+			default: false,
+			type: Boolean
 		}
 	}
+}
 </script>
 
 <style lang="scss" scoped>

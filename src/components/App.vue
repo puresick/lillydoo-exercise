@@ -5,8 +5,8 @@
 		/>
 		<ProductPicker
 			:content="$t('productPicker')"
-			:selectProduct="selectProduct"
-			:activeItem="productPicker.activeItem"
+			:select-product="selectProduct"
+			:active-item="productPicker.activeItem"
 		/>
 		<HowTo
 			:content="$t('howTo')"
@@ -19,35 +19,35 @@
 </template>
 
 <script>
-	import { mapState, mapActions } from "vuex"
+import { mapState, mapActions } from "vuex"
 
-	import HeroSection from "./HeroSection"
-	import HowTo from "./HowTo"
-	import PackageContent from "./PackageContent"
-	import ProductPicker from "./ProductPicker"
+import HeroSection from "./HeroSection"
+import HowTo from "./HowTo"
+import PackageContent from "./PackageContent"
+import ProductPicker from "./ProductPicker"
 
-	export default {
-		name: "App",
-		components: {
-			HeroSection,
-			HowTo,
-			PackageContent,
-			ProductPicker
-		},
-		computed: {
-			...mapState([
-				"heroContent",
-				"howToContent",
-				"packageContent",
-				"productPicker"
-			])
-		},
-		methods: {
-			...mapActions([
-				"selectProduct"
-			])
-		}
+export default {
+	name: "App",
+	components: {
+		HeroSection,
+		HowTo,
+		PackageContent,
+		ProductPicker
+	},
+	computed: {
+		...mapState([
+			"heroContent",
+			"howToContent",
+			"packageContent",
+			"productPicker"
+		])
+	},
+	methods: {
+		...mapActions([
+			"selectProduct"
+		])
 	}
+}
 </script>
 
 <style lang="scss">

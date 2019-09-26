@@ -3,7 +3,7 @@
 		<picture>
 			<img
 				:src="fragment.image"
-				/>
+			>
 		</picture>
 		<div>
 			<AppSubHeadline>
@@ -17,22 +17,22 @@
 </template>
 
 <script>
-	import AppList from "./AppList"
-	import AppSubHeadline from "./AppSubHeadline"
+import AppList from "./AppList"
+import AppSubHeadline from "./AppSubHeadline"
 
-	export default {
-		name: "PackageContentFragment",
-		components: {
-			AppList,
-			AppSubHeadline
-		},
-		props: {
-			fragment: {
-				default: {},
-				type: Object
-			}
+export default {
+	name: "PackageContentFragment",
+	components: {
+		AppList,
+		AppSubHeadline
+	},
+	props: {
+		fragment: {
+			default: () => ({}),
+			type: Object
 		}
 	}
+}
 </script>
 
 <style lang="scss" scoped>

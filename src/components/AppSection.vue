@@ -12,20 +12,20 @@
 </template>
 
 <script>
-	import AppHeadline from "./AppHeadline"
+import AppHeadline from "./AppHeadline"
 
-	export default {
-		name: "AppSection",
-		components: {
-			AppHeadline
-		},
-		props: {
-			headline: {
-				default: undefined,
-				type: String
-			}
+export default {
+	name: "AppSection",
+	components: {
+		AppHeadline
+	},
+	props: {
+		headline: {
+			default: undefined,
+			type: String
 		}
 	}
+}
 </script>
 
 <style lang="scss" scoped>
